@@ -7,11 +7,9 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.6.1');
+  api.versionsFrom('2.7.3');
   api.use('ecmascript');
-  api.use('zimme:collection-timestampable@1.0.9');
-  api.use('mongo@1.1.17');
-  api.mainModule('sensors-collection.js');
+  api.mainModule('sensors-collection.js', 'server');
 });
 
 Package.onTest(function(api) {
