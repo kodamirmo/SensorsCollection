@@ -9,7 +9,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('2.7.3');
   api.use('ecmascript');
-  api.mainModule('sensors-collection.js', 'server');
+  api.mainModule('sensors-collection.js');
 });
 
 Package.onTest(function(api) {
